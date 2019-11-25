@@ -24,7 +24,7 @@ vout=(vout/1024.0)*500;
 tempc=vout;
 b=(byte)Serial.read();
 float myBPM = pulseSensor.getBeatsPerMinute(); 
-if(b==48){
+if(b==48){//to start session with mobile
 Serial.println((char)tempc);}
 if(b==49){
 if (pulseSensor.sawStartOfBeat()) {
